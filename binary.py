@@ -7,6 +7,6 @@ def binary(lista, low, high, x):
     if x == lista[mid]:
         return mid
     elif x < lista[mid]:
-        return binary(l, low, mid - 1, x)
+        return binary(lista, low, mid - 1, x)
     else:
-        return binary(l, mid + 1, high, x)
+        return binary(lista, mid + 1, high, x)
